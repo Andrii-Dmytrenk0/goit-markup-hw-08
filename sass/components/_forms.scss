@@ -21,9 +21,9 @@ textarea {
 }
 
 .form-info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: flex-start;
     margin-bottom: 10px;
     position: relative;
 
@@ -85,8 +85,8 @@ textarea {
 
 .feetback {
     position: relative;
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
 
     margin-bottom: 20px;
 }
@@ -100,8 +100,8 @@ textarea {
 
     color: var(--title-text-color);
 
-    display: flex;
-    align-items: flex-start;
+    // display: flex;
+    // align-items: flex-start;
 
     margin-bottom: 4px;
 }
@@ -126,16 +126,16 @@ textarea {
 }
 
 .polisy {
-    display: flex;
     position: relative;
-    justify-content: center;
+    // display: flex;
+    // justify-content: center;
     margin-bottom: 30px;
 }
 
 .polisy>label {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
 
     font-weight: 400;
     font-size: 14px;

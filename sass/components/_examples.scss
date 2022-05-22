@@ -1,26 +1,14 @@
 /* examples-section */
-.examples-section {
+.section--no-padding-top {
     padding-top: 0;
 }
 
-.examples-title {
-    color: var(--primiry-text-color);
-
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.14;
-    text-align: center;
-    letter-spacing: 0.03em;
-
-    margin-bottom: 50px;
-}
-
 .examples {
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    // justify-content: center;
 }
 
-.examples__list {
+.examples__item {
     margin-left: 30px;
     position: relative;
 

@@ -28,11 +28,11 @@
 }
 
 .filter {
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    // justify-content: center;
 }
 
-.filter__list {
+.filter__item {
     margin-left: 8px;
 
     &:last-child{

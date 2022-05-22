@@ -14,14 +14,6 @@ body {
     font-family: Roboto, sans-serif;
 }
 
-.list {
-    list-style: none;
-}
-
-.link {
-    text-decoration: none;
-}
-
 h1,
 h2,
 h3,
@@ -61,7 +53,7 @@ a {
 /* acent #2196F3 */
 /* адресс футера rgba(255, 255, 255, 0.6); */
 .container {
-    width: 1200px;
+    max-width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -79,4 +71,16 @@ a {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+.section__title{
+    color: var(--primiry-text-color);
+    
+        font-weight: 700;
+         font-size: 36px;
+        line-height: 1.14;
+        text-align: center;
+        letter-spacing: 0.03em;
+    
+        margin-bottom: 50px;
 }

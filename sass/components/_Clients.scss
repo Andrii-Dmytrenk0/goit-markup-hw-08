@@ -1,24 +1,11 @@
 /* Clients */
-.client-header {
-    color: var(--primiry-text-color);
-
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.14;
-    text-align: center;
-    letter-spacing: 0.03em;
+.clients {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
 }
 
-.client {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    margin-top: 50px;
-
-}
-
-.client__list {
+.clients__item {
     margin-right: 30px;
 
     &:last-child{
@@ -27,9 +14,9 @@
 }
 
 .client__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
 
     border: 1px solid #AFB1B8;
     box-sizing: border-box;
