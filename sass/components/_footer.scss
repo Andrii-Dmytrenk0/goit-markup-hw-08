@@ -1,0 +1,133 @@
+/* footer */
+.footer {
+    background-color: var(--background-hero);
+    padding: 60px 0;
+}
+
+.footer__adrees-block {
+    flex-grow: 1;
+}
+
+.address__list {
+    margin-bottom: 9px;
+
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+
+.footer__icon {
+    color: var(--acent-color);
+    font-family: "Raleway", sans-serif;
+
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+}
+
+.footer__icon-second {
+    color: var(--h1-text-color);
+    font-family: "Raleway", sans-serif;
+
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.address {
+    font-style: normal;
+}
+
+.address__map {
+    color: var(--h1-text-color);
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover, &:focus{
+        color: var(--acent-color);
+    }
+}
+
+.address__item {
+    color: var(--adress-footer-text);
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover, &:focus{
+        color: var(--acent-color);
+    }
+}
+
+.footer__box {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-social {
+    margin-left: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-social__main {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--h1-text-color);
+}
+
+.footer-social__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.footer-social__link {
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    fill: var(--h1-text-color);
+
+    &:hover, &:focus { 
+        background-color: var(--acent-color);
+        border-radius: 50%;
+        fill: var(--h1-text-color);
+
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+.footer-social__item-list {
+    margin-right: 10px;
+
+    &:last-child{
+        margin-right: 0;
+    }
+}

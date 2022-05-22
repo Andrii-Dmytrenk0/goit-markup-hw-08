@@ -1,0 +1,51 @@
+/* hang-section */
+.hang {
+    display: flex;
+    justify-content: center;
+}
+
+.hang__list {
+    margin-left: 30px;
+    max-width: 270px;
+
+    &:first-child{
+        margin-left: 0;
+    }
+}
+
+.hang__block {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    max-width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+}
+
+.hang__icons {
+    width: 70px;
+    height: 70px;
+}
+
+.hang__label {
+    color: var(--primiry-text-color);
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.hang__text {
+    color: var(--title-text-color);
+
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}

@@ -1,0 +1,35 @@
+/* logo */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.header__logo {
+    color: var(--acent-color);
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+}
+
+.header__logo-second {
+    color: var(--primiry-text-color);
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+
+    margin-right: 93px;
+}
