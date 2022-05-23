@@ -96,5 +96,32 @@
 }
 
 .nav__button{
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
 
+    & .nav__icon-crose{
+        display: none;
+    }
+
+    &.is-open .nav__icon-crose{
+        display: block;
+    }
+
+    &.is-open .nav__icon-menu {
+        display: none;
+    }
+}
+.nav__menu-mobile{
+    display: none;
+    width: 200px;
+    height: 200px;
+    background-color: black;
+
+    &.is-open {
+        display: block;
+    }
 }

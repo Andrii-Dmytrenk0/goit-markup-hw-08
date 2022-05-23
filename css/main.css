@@ -184,6 +184,40 @@ a {
   fill: currentColor;
 }
 
+.nav__button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.nav__button .nav__icon-crose {
+  display: none;
+}
+
+.nav__button.is-open .nav__icon-crose {
+  display: block;
+}
+
+.nav__button.is-open .nav__icon-menu {
+  display: none;
+}
+
+.nav__menu-mobile {
+  display: none;
+  width: 200px;
+  height: 200px;
+  background-color: black;
+}
+
+.nav__menu-mobile.is-open {
+  display: block;
+}
+
 /* Clients */
 .clients__item {
   margin-right: 30px;
