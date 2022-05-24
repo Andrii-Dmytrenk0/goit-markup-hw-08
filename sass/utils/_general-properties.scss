@@ -52,12 +52,32 @@ a {
 /* цвет для h1 #FFFFFF */
 /* acent #2196F3 */
 /* адресс футера rgba(255, 255, 255, 0.6); */
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+    @media screen and (min-width: 1200px){
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
 .container {
-    max-width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+
+     @media screen and (min-width: 480px){
+        width: 480px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
 }
 
 .visually-hidden {
@@ -83,4 +103,8 @@ a {
         letter-spacing: 0.03em;
     
         margin-bottom: 50px;
+
+        @media screen and (max-width: $desktop){
+            margin-bottom: 30px;
+        }
 }

@@ -1,27 +1,66 @@
 /* hang-section */
 .futures {
-    // display: flex;
-    // justify-content: center;
+    @media screen and (min-width: $tablet){
+        display: flex;
+        flex-wrap: wrap;
+    }
+    @media screen and (min-width: $desktop) {
+         display: flex;
+        justify-content: center;
+    }
+   
 }
 
 .futures__item {
-    margin-left: 30px;
-    max-width: 270px;
+    margin-bottom: 30px;
+    &:last-child{
+        margin-bottom: 0;
+    }
+    @media screen and (min-width: $tablet) {
+        width: 354px;
+        margin-right: 30px;
+        
+        &:nth-child(2n){
+            margin-right: 0;
+        }
+        &:nth-last-child(-n+2) {
+            margin-bottom: 0;
+        }
+    }
+    @media screen and (min-width: 1200px){
 
-    &:first-child{
-        margin-left: 0;
+        width: 270px;
+        &:nth-child(2n) {
+            margin-right: 30px;
+        }
+        &:last-child{
+            margin-right: 0;
+        }
+        &:nth-child(-n+2) {
+            margin-bottom: 0;
+        }
+        
     }
 }
 
 .futures__block {
-    // display: flex;
-    // text-align: center;
-    // justify-content: center;
-    // align-items: center;
-    max-width: 270px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 450px;
     height: 120px;
     background-color: #F5F4FA;
     border-radius: 4px;
+    
+
+    @media screen and (min-width: $desktop) {
+        max-width: 270px;
+        height: 120px;
+        background-color: #F5F4FA;
+        border-radius: 4px;
+    }
 }
 
 .futures__icon {
@@ -40,6 +79,8 @@
 
     margin-bottom: 10px;
     margin-top: 30px;
+
+    text-align: center;
 }
 
 .futures__text {
