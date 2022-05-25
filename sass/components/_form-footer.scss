@@ -1,20 +1,41 @@
 /* form-footer */
 .input-wrap {
-    // display: flex;
-    // align-items: flex-end;
-    margin-left: 93px;
+    display: inline-block;
+    @media screen and (min-width: $tablet){
+        margin-top: 60px;
+    }
+
+    @media screen and (min-width: $desktop){
+        margin-top: 0;
+        margin-left: 93px;  
+    }
+
+    @media screen and (max-width: $desktop) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.item-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: $desktop){
+        flex-direction: row;
+        margin-top: 20px;
+    }
 }
 
 .subscribe {
     margin-right: 12px;
 
-    // display: flex;
-    // flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .subscribe>label {
-    margin-bottom: 20px;
-
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
@@ -24,10 +45,7 @@
     color: var(--h1-text-color);
 }
 
-.subscribe>input {
-    max-width: 358px;
-    height: 50px;
-
+.item-form>input {
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     background: transparent;
@@ -37,6 +55,20 @@
     padding-top: 15px;
 
     color: var(--h1-text-color);
+
+   margin: 20px 0 20px;
+
+    @media screen and (max-width: 767px) {
+        width: 100%;
+    }
+    @media screen and (min-width: $tablet){
+        width: 450px;
+    }
+    @media screen and (min-width: $desktop){
+        margin: 0 12px 0 0;
+        width: 358px;
+    }
+
 }
 
 .subscribe-button {
@@ -55,9 +87,9 @@
     line-height: 30px;
     letter-spacing: 0.06em;
 
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 
 }

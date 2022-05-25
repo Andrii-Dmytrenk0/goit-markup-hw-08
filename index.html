@@ -81,7 +81,7 @@
                                 <use href="./images/symbol-defs.svg#icon-close-svg"></use>
                             </svg>
                     </button>
-                    <form name="signup_form" autocomplete="on" novalidate>
+                    <form name="signup_form" autocomplete="on" novalidate class="modal__form">
                         <h2 class="form-label">Оставьте свои данные, мы вам перезвоним</h2>
                         <div class="form-info">
                         <label for="name">Имя</label>
@@ -426,7 +426,7 @@
                 </address>
             </div>
                 <div class="footer-social">
-                    <b class="footer-social__main">присоединяйтесь</b>
+                    <h3 class="footer-social__main">присоединяйтесь</h3>
                     <ul class="footer-social__list">
                         <li class="footer-social__item-list">
                             <a href="" class="footer-social__link">
@@ -459,16 +459,18 @@
                     </ul>
                 </div>
                 <form class="input-wrap">
-                    <div class="subscribe">
-                    <label for="subscribe">Подпишитесь на рассылку</label>
-                    <input type="text" name="subscribe" placeholder="Email">
-                    </div>
-                    <button type="submit" class="subscribe-button">Подписаться
-                        <svg class="subscribe-button__icon">
-                            <use href="./images/symbol-defs.svg#icon-icon-send"></use>
-                        </svg>
-                    </button>
-                </form>
+                <div class="subscribe">
+                    <label for="mail">Подпишитесь на рассылку</label>
+                <div class="item-form">
+                    <input type="text" name="subscribe" placeholder="Email" id="mail">
+                     <button type="submit" class="subscribe-button">Подписаться
+                    <svg class="subscribe-button__icon">
+                        <use href="./images/symbol-defs.svg#icon-icon-send"></use>
+                    </svg>
+                </button>
+                </div>
+                </div>
+            </form>
         </div>
     </footer>
     <script src="./js/mobile-menu.js"></script>

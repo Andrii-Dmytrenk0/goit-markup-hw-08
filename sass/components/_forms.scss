@@ -1,4 +1,8 @@
 /* forms */
+.modal__form{
+    display: flex;
+    flex-direction: column;
+}
 .polisy__link {
     text-decoration: underline;
     color: var(--acent-color);
@@ -21,9 +25,9 @@ textarea {
 }
 
 .form-info {
-    // display: flex;
-    // flex-direction: column;
-    // align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     margin-bottom: 10px;
     position: relative;
 
@@ -85,8 +89,8 @@ textarea {
 
 .feetback {
     position: relative;
-    // display: flex;
-    // flex-direction: column;
+    display: flex;
+    flex-direction: column;
 
     margin-bottom: 20px;
 }
@@ -100,8 +104,8 @@ textarea {
 
     color: var(--title-text-color);
 
-    // display: flex;
-    // align-items: flex-start;
+    display: flex;
+    align-items: flex-start;
 
     margin-bottom: 4px;
 }
@@ -127,20 +131,31 @@ textarea {
 
 .polisy {
     position: relative;
-    // display: flex;
-    // justify-content: center;
+    display: flex;
+    justify-content: center;
     margin-bottom: 30px;
 }
 
 .polisy>label {
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+     @media screen and (min-width: $desktop){
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+    }
 
     font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
+
+    margin-top: 20px;
+
+    color: var(--title-text-color);
 }
 
 .polisy__checkbox {

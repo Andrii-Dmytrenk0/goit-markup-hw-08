@@ -1,18 +1,49 @@
 /* footer */
 .footer {
+    @media screen and (min-width: $desktop){
+        text-align: left;
+    }
     background-color: var(--background-hero);
     padding: 60px 0;
+    text-align: center;
+}
+
+.footer__box {
+    // display: flex;
+    // align-items: baseline;
+
+        @media screen and (min-width: $tablet){
+        width: auto;
+        align-items: baseline;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    @media screen and (min-width: $desktop){
+        justify-content: start;
+        flex-wrap: nowrap;
+    }
 }
 
 .footer__adrees-block {
-    flex-grow: 1;
+    @media screen and (min-width: $desktop){
+        flex-grow: 1;
+    }
+    
 }
 
 .address__list {
-    margin-bottom: 9px;
-
+     margin-bottom: 8px;
     &:last-child{
         margin-bottom: 0;
+    }
+    @media screen and (min-width: $desktop){
+        margin-bottom: 9px;
+        
+        &:last-child {
+            margin-bottom: 0;
+        }    
     }
 }
 
@@ -73,16 +104,17 @@
     }
 }
 
-.footer__box {
-    // display: flex;
-    // align-items: baseline;
-}
-
 .footer-social {
-    margin-left: 70px;
+    // margin-left: 70px;
     // display: flex;
     // flex-direction: column;
     // align-items: flex-start;
+    @media screen and (max-width: 767px){
+    margin: 60px 0 60px;
+    }
+    @media screen and (min-width: $desktop){
+        margin-left: 70px;
+    }
 }
 
 .footer-social__main {
@@ -93,22 +125,28 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--h1-text-color);
+
+    margin-bottom: 20px;
 }
 
 .footer-social__list {
     // display: flex;
     // justify-content: center;
     // align-items: center;
-    margin-top: 20px;
+    // margin-top: 20px;
+    display: flex;
+    @media screen and (max-width: 1199px){
+    justify-content: center;
+    }
 }
 
 .footer-social__link {
     width: 44px;
     height: 44px;
 
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
