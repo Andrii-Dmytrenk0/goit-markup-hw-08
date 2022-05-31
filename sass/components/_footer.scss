@@ -9,9 +9,6 @@
 }
 
 .footer__box {
-    // display: flex;
-    // align-items: baseline;
-
         @media screen and (min-width: $tablet){
         width: auto;
         align-items: baseline;
@@ -21,16 +18,9 @@
     }
 
     @media screen and (min-width: $desktop){
-        justify-content: start;
+        justify-content: space-around;
         flex-wrap: nowrap;
     }
-}
-
-.footer__adrees-block {
-    @media screen and (min-width: $desktop){
-        flex-grow: 1;
-    }
-    
 }
 
 .address__list {
