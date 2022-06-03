@@ -5,6 +5,7 @@
     border: none;
     background-color: transparent;
     cursor: pointer;
+    z-index: 2;
 
     & .nav__icon-crose{
         display: none;
@@ -23,27 +24,28 @@
     }
 }
 
-.nav__menu-mobile{
-    display: none;
-    width: 200px;
-    height: 200px;
-    background-color: black;
-
-    &.is-open {
-        display: block;
-    }
-}
 
 .mobile-menu{
-    &.is-open{
-        display: block;
-    }
-
     @media screen and (max-width: 767px){
         display: none;
         position: absolute;
-        top: 100%;
+        top: 0;
         left: 0;
+        width: 100%;
+        background-color: var(--h1-text-color);
+        padding: 48px 40px;
+
+        &.is-open{
+        display: flex;
+        z-index: 1;
+        height: 796px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    }
+    @media screen and (min-width:$tablet){
+        display: flex;
+        justify-content: space-between;
         width: 100%;
     }
     @media screen and (min-width: $desktop){
@@ -51,8 +53,15 @@
         justify-content: space-between;
         width: 100%;
     }
-}
+    }
+
 .mobile-flex{
-    display: flex;
-    align-items: center;
+    @media screen and (min-width: $desktop){
+        display: flex;
+    }
+
+    @media screen and (min-width:$tablet){
+        display: flex;
+        justify-content: center;
+    }
 }

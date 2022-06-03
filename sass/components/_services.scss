@@ -55,6 +55,10 @@
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
     box-sizing: border-box;
+
+    @media screen and (min-width: $tablet) and (max-width: 1199px){
+        flex-grow: 1;
+    }
 }
 
 .services__link {
