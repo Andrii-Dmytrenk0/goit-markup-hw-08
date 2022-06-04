@@ -195,19 +195,41 @@
                     <ul class="examples">
                         <li class="examples__item">
                             <div class="examples__backdrop">
-                            <img src="./images/box1.jpg" alt="Семантическая верстка" width="370">
+                            <picture>
+                                <source
+                                    srcset="
+                                    ./images/dev1-1x.jpg 1x, 
+                                    ./images/dev1-2x.jpg 2x
+                                    "
+                                >
+                                <img src="images/unknown.png" alt="Разработчик пишет код" width="370" />
+                            </picture>
                                 <p class="examples__text">Десктопные приложения</p>
                             </div>
                         </li>
                         <li class="examples__item">
                             <div class="examples__backdrop">
-                            <img src="./images/box2.jpg" alt="Адаптивня верстка" width="370">
+                            <picture>
+                                <source srcset="
+                                    ./images/dev2-1x.jpg 1x, 
+                                    ./images/dev2-2x.jpg 2x
+                                    "
+                                >
+                                <img src="images/unknown(1).png" alt="Разработчик выбирает дизайн" width="370" />
+                            </picture>
                                 <p class="examples__text">Мобильные приложения</p>
                             </div>
                         </li>
                         <li class="examples__item">
                             <div class="examples__backdrop">
-                            <img src="./images/box3.jpg" alt="Палитра с цветом" width="370">
+                            <picture>
+                                <source srcset="
+                                    ./images/dev3-1x.jpg 1x, 
+                                    ./images/dev3-2x.jpg 2x
+                                    "
+                                >
+                                <img src="images/unknown(2).png" alt="Разработчик выбирает цветовую палитру" width="370" />
+                            </picture>
                                 <p class="examples__text">Дизайнерские решения</p>
                             </div>
                         </li>
@@ -220,7 +242,27 @@
                 <h2 class="section__title">Наша команда</h2>
                     <ul class="team">
                         <li class="team__item">
-                            <img src="./images/img1.jpg" alt="Сотрудник Игорь Демьяненко" width="270">
+                            <picture>
+                                <source srcset="
+                                    ./images/mobigor-1x.jpg 1x,
+                                    ./images/mobigor-2x.jpg 2x
+                                    "
+                                    media="(max-width: 767px)"
+                                >
+                                <source srcset="
+                                    ./images/igorpc-1x.jpg 1x,
+                                    ./images/igorpc-2x.jpg 2x
+                                    " 
+                                    media="(min-width: 1200px)"
+                                >
+                                <source srcset="
+                                    ./images/tabigor-1x.jpg 1x,
+                                    ./images/tabigor-2x.jpg 2x
+                                    "
+                                >
+
+                                <img src="images/igor.png" alt="Игорь Демьяненко" />
+                            </picture>
                             <div class="team__box">
                                 <h3 class="team__title">Игорь Демьяненко</h3>
                                 <p class="team__text">Product Designer</p>
@@ -257,7 +299,25 @@
                              </div>
                         </li>
                 <li class="team__item">
-                    <img src="./images/img2.jpg" alt="Сотрудник Ольга Репина" width="270">
+                    <picture>
+                                <source srcset="
+                                    ./images/mobolga-1x.jpg 1x,
+                                    ./images/mobolga-2x.jpg 2x
+                                    " media="(max-width: 767px)"
+                                >
+                                <source srcset="
+                                    ./images/olgapc-1x.jpg 1x,
+                                    ./images/olgapc-2x.jpg 2x
+                                    " media="(min-width: 1200px)"
+                                >
+                                <source srcset="
+                                    ./images/tabolga-1x.jpg 1x,
+                                    ./images/tabolga-2x.jpg 2x
+                                    "
+                                >
+                            
+                                <img src="images/olga.png" alt="Ольга Репина" />
+                            </picture>
                     <div class="team__box">
                         <h3 class="team__title">Ольга Репина</h3>
                         <p class="team__text">Frontend Developer</p>
@@ -294,7 +354,25 @@
                     </div>
                 </li>
                 <li class="team__item">
-                    <img src="./images/img3.jpg" alt="Сотрудник Николай Тарасов" width="270">
+                    <picture>
+                                <source srcset="
+                                    ./images/mobnikola-1x.jpg 1x,
+                                    ./images/mobnikola-2x.jpg 2x
+                                    " media="(max-width: 767px)"
+                                >
+                                <source srcset="
+                                    ./images/nikolapc-1x.jpg 1x,
+                                    ./images/nikolapc-2x.jpg 2x
+                                    " media="(min-width: 1200px)"
+                                >
+                                <source srcset="
+                                    ./images/tabnikola-1x.jpg 1x,
+                                    ./images/tabnikola-2x.jpg 2x
+                                    "
+                                >
+                            
+                                <img src="images/nikola.png" alt="Николай Тарасов" />
+                            </picture>
                         <div class="team__box">
                             <h3 class="team__title">Николай Тарасов</h3>
                             <p class="team__text">Marketing</p>
@@ -331,7 +409,25 @@
                         </div>
                 </li>
                 <li class="team__item">
-                    <img src="./images/img4.jpg" alt="Сотрудник Михаил Ермаков" width="270">
+                    <picture>
+                                <source srcset="
+                                    ./images/mobmiha-1x.jpg 1x,
+                                    ./images/mobmiha-2x.jpg 2x
+                                    " media="(max-width: 767px)"
+                                >
+                                <source srcset="
+                                    ./images/mihapc-1x.jpg 1x,
+                                    ./images/mihapc-2x.jpg 2x
+                                    " media="(min-width: 1200px)"
+                                >
+                                <source srcset="
+                                    ./images/tabmiha-1x.jpg 1x,
+                                    ./images/tabmiha-2x.jpg 2x
+                                    "
+                                >
+                            
+                                <img src="images/miha.png" alt="Михаил Ермаков" />
+                            </picture>
                         <div class="team__box">
                             <h3 class="team__title">Михаил Ермаков</h3>
                             <p class="team__text">UI Designer</p>

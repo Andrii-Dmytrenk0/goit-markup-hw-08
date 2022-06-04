@@ -2,18 +2,66 @@
 .hero {
     text-align: center;
     background-color: #2F303A;
-    ;
     max-width: 1600px;
-    height: 600px;
+    // height: 600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/heroimg.jpg);
-    background-position: center;
-    background-size: contain;
+        url(../images/mobherobg-1x.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding: 188px 0;
+
+    @media screen and (min-width: $desktop){
+        padding: 200px 0;
+    }
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)), 
+            url('../images/mobherobg-2x.jpg');
+    }
+}
+
+@media screen and (min-width: $tablet){
+    .hero {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+            url('../images/bgtab-1x.jpg');
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)), 
+                url('../images/bgtab-2x.jpg');
+        }
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    .hero {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)), 
+            url('../images/bgpc-1x.jpg');
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)), 
+                url('../images/bgpc-2x.jpg');
+        }
+    }
 }
 
 .hero__captoin {
@@ -27,6 +75,11 @@
     text-transform: uppercase;
 
     margin-bottom: 30px;
+
+    @media screen and (max-width: 1199px){
+        font-size: 26px;
+        line-height: 1.61;
+    }
 
 }
 
