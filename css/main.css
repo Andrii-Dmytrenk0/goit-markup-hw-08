@@ -76,19 +76,19 @@ a {
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    max-width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -119,6 +119,8 @@ a {
 @media screen and (max-width: 1199px) {
   .section__title {
     margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 33px;
   }
 }
 
@@ -191,9 +193,12 @@ a {
   }
 }
 
+.nav__link {
+  color: var(--primiry-text-color);
+}
+
 @media screen and (min-width: 768px) {
   .nav__link {
-    color: var(--primiry-text-color);
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -1145,9 +1150,17 @@ textarea {
   letter-spacing: 0.06em;
   border-radius: 4px;
   padding: 10px 32px;
-  min-width: 200px;
+  width: 200px;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* hang-section */
@@ -1248,7 +1261,13 @@ textarea {
   text-transform: uppercase;
   margin-bottom: 10px;
   margin-top: 30px;
-  text-align: center;
+  text-align: left;
+}
+
+@media screen and (max-width: 767px) {
+  .futures__title {
+    text-align: center;
+  }
 }
 
 .futures__text {
@@ -1270,7 +1289,7 @@ textarea {
   background-position: center;
   margin-left: auto;
   margin-right: auto;
-  padding: 188px 0;
+  padding: 118px 0;
 }
 
 @media screen and (min-width: 1200px) {

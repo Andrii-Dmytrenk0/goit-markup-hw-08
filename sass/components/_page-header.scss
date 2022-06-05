@@ -41,9 +41,8 @@
 }
 
 .nav__link {
+    color: var(--primiry-text-color);
     @media screen and (min-width: $tablet){
-        color: var(--primiry-text-color);
-
     display: block;
 
     padding-top: 32px;
